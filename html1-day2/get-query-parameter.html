@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="?q=1234">Добавить в корзину</a><br>
+    <a href="?q=4567">Добавить в корзину</a><br>
+    <a href="?q=7890">Добавить в корзину</a><br>
+
+    <script>
+       const info = location.search
+       document.body.innerHTML += info
+    </script>
+</body>
+</html>

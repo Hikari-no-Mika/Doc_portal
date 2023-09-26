@@ -1,0 +1,87 @@
+Сделать обертку в body
+<div class="container">...</div>
+<div class="wrapper">...</div>
+
+Сделать верхнюю часть страницы (шапка)
+<div class="header">...</div>
+<header>...</header>
+
+Сделать нижнюю часть страницы (подвал)
+<footer>...</footer>
+
+Навигационное меню 
+<nav>...</nav>
+
+Статью на сайте/комментарий
+<article>...</article>
+
+Сделать выноску 
+<aside>...</aside>
+
+Как сделать секции
+<section>...</section>
+
+Как сделать колонки
+<div class="columns">
+  <div class="column column1">...</div>
+  <div class="column column2">...</div>
+  <div class="column column3">...</div>
+</div>
+
+<div class="cols">
+  <div class="col col1">...</div>
+  <div class="col col2">...</div>
+  <div class="col col3">...</div>
+</div>
+
+
+
+
+
+    .columns
+    <div class="columns"></div>
+
+    .columns>.col
+    <div class="columns">
+        <div class="col"></div>
+    </div>
+   
+    .columns>.col.col$*3{Текст $}
+    <div class="columns">
+        <div class="col col1">Текст 1</div>
+        <div class="col col2">Текст 2</div>
+        <div class="col col3">Текст 3</div>
+    </div>
+
+
+https://validator.w3.org/
+
+    
+Создание гиперссылки
+<a href="#">Нажми сюда</a> - ссылка заглушка
+<a href="file.zip">...</a> - ссылка на архив
+<a href="about.html">...</a> - ссылка на HTML-файл
+<a href="folder1/about.html">...</a> - на HTML-файл в папке folder1
+<a href="../about.html">...</a> - на HTML-файл выше папкой
+<a href="/about.html">...</a> - на HTML-файл от корня сервера/сайта
+
+<a href="#comment-1234">Зацени мой коммент!</a>
+...
+<div id="comment-1234">
+ да вы, да мы
+</div>
+
+<div class="phones">
+ ...
+  <a href="/addbasket?id=1234">Добавить в корзину</a> 
+</div>
+
+<a href="tel:+74952323216">+7 (495) 232-32-16</a>
+
+Задачи:
+1. Создать 4 ссылки в каждом nav (index.html, about.html, contacts.html, noname.html)
+2. Внутри текста параграфов разместить ссылки на email,телефон,телеграмм
+<a href="https://t.me/htmllab">Подпишись на канал</a>
+<a href="tel:+74952323216">+7 (495) 232-32-16</a>
+<a href="mailto:info@info.info">info@info.info</a>
+3. Проверить всё на валидаторе

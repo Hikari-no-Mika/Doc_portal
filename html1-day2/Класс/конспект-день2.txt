@@ -1,0 +1,35 @@
+Сделать обертку в body
+<div class="container">...</div>
+<div class="wrapper">...</div>
+
+Сделать верхнюю часть страницы (шапка)
+<div class="header">...</div>
+<header>...</header>
+
+Сделать нижнюю часть страницы (подвал)
+<footer>...</footer>
+
+Навигационное меню 
+<nav>...</nav>
+
+Статью на сайте/комментарий
+<article>...</article>
+
+Сделать выноску 
+<aside>...</aside>
+
+Как сделать секции
+<section>...</section>
+
+Как сделать колонки
+<div class="columns">
+  <div class="column column1">...</div>
+  <div class="column column2">...</div>
+  <div class="column column3">...</div>
+</div>
+
+<div class="cols">
+  <div class="col col1">...</div>
+  <div class="col col2">...</div>
+  <div class="col col3">...</div>
+</div>
