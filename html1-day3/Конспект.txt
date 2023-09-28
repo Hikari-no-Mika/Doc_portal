@@ -1,0 +1,267 @@
+CSS
+
+CSS-селекторы - правила нахождения HTML элементов
+
+CSS-свойства - характеристики оформления ( поменять шрифт, поменять цвет текста, поменять размер параграфа, расположение HTML-элемента, анимация...  )
+
+
+Способы применения CSS
+1. <p style="color:red">Ехал Грека...</p> инлайновое размещение
+2. 
+<head>
+ <style>
+   p{
+     color:grey
+   }
+ </style>
+<head>
+3. <link rel="stylesheet" href="css-base.css" >
+  css-base.css:
+  h1{
+    color: blue
+  }
+4. @import url(foo.css);
+
+
+Селекторы
+div - селектор по тегу (по имени)
+<div></div> +
+<div></div> +
+
+#foo - селектор по id
+<div id="foo"></div> +
+<div></div>
+
+.foo - селектор по классу
+<div class="foo"></div> +
+<div></div>
+
+[title='Привет'] - селектор по атрибуту
+<div title="Привет"></div> +
+<div title="Пока"></div>
+
+section div - контекстный селектор
+<div></div>
+<section><div></div></section> +
+<section><div></div></section> +
+<section><footer><div></div></footer></section> +
+
+
+.foo3{}
+.foo{}
+.foo1{}
+.foo2{}
+
+<div class="foo foo1 foo2 foo3"></div>
+
+section > div - селектор вложенности
+<div></div>
+<section><div></div></section> +
+<section><div></div></section> +
+<section><footer><div></div></footer></section>
+
+Псевдоклассы - это такие классы, которые мы не создаем, а они есть
+
+a:link - селектор непосещенной ссылки
+a:visited - селектор посещенной ссылки
+a:active - селектор нажатой ссылки
+
+a:hover - селектор наведения
+
+
+Способы задать цвет
+- orange, red, green
+- rgb(255,0,0)
+- rgb(100%,0,0)
+- rgba(255,0,0, 0.5)
+- #ff0000
+- #ff000045
+
+Способы задать размер
+1px
+1em - относительная величина (от размера базового текста, т.е. чаще всего 16px)
+1rem - всегда относительного базового HTML-размера
+1vw - одна сотая ширины страницы
+1vh - одна сотая высоты страницы
+
+
+Не трогали базовый:
+html {}
+div { font-size: 1em } ----> 16px
+
+<html>
+...
+  <div>текст</div>
+...
+</html>
+
+Поменяли базовый:
+html { font-size: 20px }
+div { font-size: 1em } ----> 20px
+
+<html>
+...
+  <div>текст</div>
+...
+</html>
+
+
+С промежуточным элементом
+html { font-size: 20px }
+section { font-size: 2em }  ----> 40px
+div { font-size: 2em } ----> 80px
+
+<html>
+...
+ <section>
+  <div>текст</div>
+ </section>
+...
+</html>
+
+
+Продолжение селекторов...
+
+* универсальный селектор - выбирает все элементы, но применяет стили только к тем, которые еще не были окрашены
+
+*{
+    border: 1px solid red;
+    font-family: Arial, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+<div>...</div>
+<p>...</p>
+<footer>...</footer>
+
+:first-child - если элемент является первым дочерним
+
+p:first-child {}
+<section>
+  <p></p> +
+  <p></p>
+  <p></p>
+</section>
+
+p:first-child {}
+<section>
+  <div></div>
+  <p></p> 
+  <p></p>
+  <p></p>
+</section>
+
+p:last-child {}
+<section>
+  <div></div>
+  <p></p> 
+  <p></p>
+  <p></p>+
+</section>
+
+p:nth-child(3) {}
+<section>
+  <p></p> 
+  <p></p> 
+  <p></p> +
+  <p></p>
+  <p></p>
+</section>
+
+p:nth-child(3) {}
+<section>
+  <div></div>
+  <p></p> 
+  <p></p> +
+  <p></p> 
+  <p></p>
+  <p></p>
+</section>
+
+p:nth-child(odd) {}
+<section>
+  <p></p> +
+  <p></p> 
+  <p></p> +
+  <p></p> 
+  <p></p> +
+</section>
+
+p:nth-child(even) {}
+<section>
+  <p></p> 
+  <p></p> +
+  <p></p> 
+  <p></p> +
+  <p></p> 
+</section>
+
+p:nth-child(2n+1) {}
+<section>
+  <p></p> +
+  <p></p> 
+  <p></p> +
+  <p></p> 
+  <p></p> +
+</section>
+
+p:nth-child(2n) {}
+<section>
+  <p></p> 
+  <p></p> +
+  <p></p> 
+  <p></p> +
+  <p></p> 
+</section>
+
+Псевдоэлементы
+
+p::first-letter - первая буква блочного элемента
+<p>Ехал Грека...</p>
+
+p::first-line - первая строка блочного элемента
+<p>Ехал Грека через реку
+Видит Грека в речке рак</p>
+
+p::after - оформление ПОСЛЕ 
+p::before - оформление ДО
+p::before{
+    content: 'Внимание! ';
+    color: red;
+    font-weight: bold;
+}
+p::after{
+    content: 'Продолжение следует';
+    color: green;
+    font-weight: bold;
+}
+<p>Ехал Грека...</p>
+
+Свойства шрифтов
+
+font-family: Arial   задание шрифта Arial
+font-size: 10px  размер шрифта 10px
+font-weight: bold|normal  жирность
+font-style: italic|normal курсивный текст 
+font-variant: small-caps отображение маленькими заглавными буквами
+
+Свойства текста 
+
+text-indent: 100px  отступ первой строки на 100px слева в блочном эл-те 
+word-spacing: 20px  расстояние между словами
+letter-spacing: 10px  расстояние между буквами
+line-height: 2em высота строки 2em
+text-align: left|right|center|justify выравнивание текста 
+text-decoration: none|underline|overline|line-through декорирование текст линией
+text-shadow: 2px 1px 3px red задание тени с отступом вправо 2px вниз 1px размытие 3px красного цвета
+text-transform: normal|uppercase|lowercase|capitalize
+
+
+Свойства фона
+background-color: red цвет фона эл-та красный
+background: red цвет фона эл-та красный
+
+background-image: url(cat.png)  фон элемента в виде кота из файла cat.png
+background-repeat: no-repeat|repeat-x|repeat-y|repeat
+background-position: 200px 50px расположение картинки 200px по x, 50px по y  
