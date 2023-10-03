@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+    <style>
+        .row {
+          margin: 10px;
+        }
+        .example {
+          width: 40px;
+        }
+      </style>
+</head>
+<body>
+    <center><h1>Обработка ПнД</h1></center>
+    <form action="">
+        <div class="row">
+          Имя:
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Введите ваше имя"
+            required
+            autofocus
+            autocomplete="off"            
+          />
+        </div>
+            <div class="row">
+              E-mail:
+              <input
+                type="email"
+                name="firstname"
+                placeholder="Введите ваш e-mail"
+                required
+                autofocus
+                autocomplete="off"            
+              />
+            </div><br>
+
+            <div class="row">
+                <label>Вопрос:</label>
+                <textarea name="question" id="question" placeholder="Введите ваш вопрос" required cols="50" rows="5"></textarea>
+              </div>
+
+              <div class="row">Согласие на обработку данных</div>
+      <div class="row">
+        <p> <input type="radio" name="PnD" id="PND1" checked /> Согласен/на</p>
+        <p><input type="radio" name="PnD" id="PND2" /> Не согласен/на</p>
+
+        <button>Отправить данные</button>
+</div>
+</form>
+</body>
+</html>
