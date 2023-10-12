@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            margin: 4px;
+        }
+
+        .example {
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <div>
+                Имя:
+                <input type="text" name="uname" id="uname" placeholder="Ввведите Ваше имя" required autocomplete="off"
+                    autofocus>
+            </div>
+            <div>
+                Email:
+                <input type="email" name="uname" id="uname" placeholder="Ввведите Ваш email" required autocomplete="off"
+                    autofocus>
+            </div>
+            <div class="row">
+                Вопрос:
+                <textarea name="msg" id="" cols="20" rows="2"></textarea>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="time" id="time" />
+                Согласны на обработку данных
+            </div>
+            <div class="row">
+                <!-- <input type="image" src="./button.png"> -->
+                <input type="submit" value="Отправить" />
+                <!-- <input type="reset" /> -->
+                <!-- <input type="button" value="Кнопка" onclick="c.value=+a.value+(+b.value)" /> -->
+                <!-- <button>Отправить <b>данные</b></button> -->
+            </div>
+        </fieldset>
+    </form>
+<br>
+<hr>
+<br>
+
+<form action="" method="post">
+    <fieldset>
+        <div class="row">
+            Товар 1 - 300 руб.
+            <!-- <button>-</button> -->
+            <input type="number" name="" id="t1z" value="2">
+            <!-- <button>+</button> -->
+             на сумму 
+             <span id="t1"></span>
+        </div>
+        <div class="row">
+            Товар 2 - 1 400 руб.
+            <!-- <button>-</button> -->
+            <input type="number" name="" id="t2z" value="3">
+            <!-- <button>+</button> -->
+            на сумму
+            <span id="t2"></span>
+        </div>
+        <div class="row">
+            Итого:
+            <input type="number" name="summ" id="" readonly="true" value="4800">
+            руб.
+        </div>
+ <button type="submit">Заказать</button>
+ <button type="reset">Сбросить</button>
+    </fieldset>
+</form>
+
+<script>
+let t1z = document.getElementById('t1z')
+let t2z = document.getElementById('t2z')
+let t1 = document.getElementById('t1')
+let t2 = document.getElementById('t2')
+
+t1.textContent = t1z.value * 300
+t2.textContent = t2z.value * 1400
+</script>
+
+</body>
+
+
+
+</html>
