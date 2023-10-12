@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма</h1>
+    <form action="handler.php" method="POST">
+        Укажите почту <input name="email">
+        Напишите вопрос <br>
+        <textarea name=message></textarea>
+        <input type="submit" >
+      </form>   
+      
+      <canvas id="canvas"></canvas>
+      <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(10, 10, 100, 100);
+      </script>
+</body>
+</html>

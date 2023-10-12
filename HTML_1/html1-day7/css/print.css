@@ -1,0 +1,28 @@
+* {
+    background: none;
+    color: #000 !important;
+}
+.container{
+    width: 94%;
+}
+footer, .col3{
+    display: none;
+}
+.col{
+    break-after: page;
+}
+.col1, .col2{
+    width: 100%;
+}
+.columns{
+    display: block;
+}
+html{
+    font-size: 1.4rem;
+}
+header nav a::after{
+  content: '(' attr(href) ')';
+  display: block;
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,0 +1,119 @@
+.left{
+    float: left;
+    margin: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px grey
+}
+.right{
+    float: right;
+    margin: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px grey
+}
+footer{
+    background: #005586;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    color: #1c84cf;
+    text-decoration: none;
+}
+footer nav a{
+    color: #fff;
+}
+
+.container{
+    border: 1px solid #000;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.columns{
+    display: flex
+}
+.col{
+    padding: 10px;
+}
+.col1, .col3{
+    width: 300px;
+}
+.col2{
+    width: 650px;
+}
+
+main p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+header nav ul, footer nav ul{
+    display: table;
+    width: 100%;
+}
+header nav ul li, footer nav ul li{
+    display: table-cell;
+    text-align: center;
+}
+header nav ul a, footer nav ul a{
+  background: #defaff;
+  display: inline-block;
+  width: 100%;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+header nav ul a:hover{
+  background: #eeffff;
+}
+footer nav ul a{
+    background: none;
+}
+footer nav ul a:hover{
+    background: #ffffff55;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+}
+
+
+
+a[href^=tel]{
+    display: inline-block;
+    background: #13ba35;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-shadow: 1px 1px 3px #444;  
+    animation: myanimation 1s linear 1s infinite; 
+     
+}
+a[href^=tel]:focus, a[href^=tel]:hover{
+    box-shadow: 0 0 0 4px rgba(74, 201, 74, 0.478);    
+}
+
+
+@keyframes myanimation {
+    0%{
+      transform: rotate(10deg)
+    }
+    10%{
+        transform: rotate(0deg)
+    }
+    20%{
+        transform: rotate(-10deg)
+    }
+    30%{
+        transform: rotate(0deg)
+    }
+    40%{
+        transform: rotate(10deg)
+    }
+    100%{
+      transform: rotate(-10deg)
+    }
+}

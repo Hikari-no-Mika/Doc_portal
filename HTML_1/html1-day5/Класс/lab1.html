@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-message .row{
+            margin: 10px;
+        }
+        .form-message label{
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+<form action="#" class="form-message">
+
+    <div class="row">
+
+        <label>Имя</label>
+        <input 
+          name="firstname"
+          required pattern="[А-ЯЁа-яё ]{2,}" 
+        >
+
+    </div>
+    <div class="row">
+
+        <label>Email</label>
+        <input 
+          type="email"
+          name="email"
+          required            
+        >
+
+    </div>
+    <div class="row">
+
+        <label>Вопрос</label>
+        <textarea 
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+    </div>
+    <div class="row">
+
+        <input 
+          type="checkbox"
+          name="rule"
+          id="rule"
+          checked
+          required
+          >
+            <label for="rule">согласие на обработку</label>
+
+    </div>
+    <div class="row">
+
+        <input type="submit"  >
+
+    </div>
+
+
+</form>
+
+</body>
+</html>
