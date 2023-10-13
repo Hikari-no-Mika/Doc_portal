@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Селекторы атрибутов</title>
+<style>
+   [title]{color: rgb(69, 80, 175);}
+   [title="Александр Овечкин"]{font-family: sans-serif;}
+   [title*="Александр"]{text-decoration: underline;}
+   [title^="Алекс"]{font-style: 2rem;}
+   [title$="як"]{color: #f63;}
+   [title|="verblud"]{border-left: 5px solid #369;}
+   [title~="gladiolus"]{border: 5px solid orange; padding: 20px;}
+   p{font-size: 24px;}
+   a[href$=html]{background-image: url(sprite.png); background-repeat: no-repeat; padding-left: 24px; display: inline-block; line-height: 23px;}
+   a[href$=txt]{background-image: url(sprite.png); background-repeat: no-repeat; padding-left: 24px; display: inline-block; line-height: 23px; background-position: 0 -24px;}
+   a[href$=xml]{background-image: url(sprite.png); background-repeat: no-repeat; padding-left: 24px; display: inline-block; line-height: 23px; background-position: 0 -48px;}
+</style>
+</head>
+<body>
+	<p><a href="selectors.html">Просто</a> <a href="new.txt">текст</a> в <a href="/docs/test.xml">параграфе</a></p>
+	<p title="">Параграф с пустым title</p>
+	<p title="Александр Овечкин gladiolus">Параграф с title "Александр Овечкин"</p>
+	<div title="Александр Пушкин">Блок с title "Александр Пушкин"</div>
+	<p title="verblud-Александрийский маяк">Параграф с title "Александрийский маяк"</p>
+</body>
+</html>
