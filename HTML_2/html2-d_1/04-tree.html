@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{padding: 40px;}
+        p:first-child{
+            color: #369;
+        }
+        /* p:last-child{
+            color: #f00;
+        } */
+        p:last-of-type{
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <p>Первый параграф в body</p>
+	<p>Второй параграф в body</p>
+	<div>
+		<p>Первый параграф в div</p>
+		<span>Первый span в div</span>
+		<p>Второй параграф в div</p>
+		<span>Второй span в div</span>
+	</div>
+	<p>Текст в параграфе</p>
+	<p>Последний параграф в body</p>
+</body>
+</html>
