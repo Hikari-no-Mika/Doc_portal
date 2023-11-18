@@ -1,0 +1,16 @@
+html{
+    font-size: 2rem;
+}
+img, nav{
+    display: none;
+}
+html::after{
+    content: 'Копирование запрещено';
+    display: block;
+    border: 4px solid #a90af3;
+    color: #a90af3;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    transform: rotate(34deg);
+}

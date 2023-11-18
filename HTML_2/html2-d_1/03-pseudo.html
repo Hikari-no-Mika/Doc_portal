@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы псевдоклассов</title>
+<style type="text/css">
+/*:link :visited :focus :active :hover*/
+a:link{color: #369;}
+a:visited{color: #f63;}
+a:focus, input:focus{
+   border: 5px solid orange;
+   outline: 0;
+   }
+   a:hover{background: #ffc;}
+a:active{color: green;}
+
+p::before{
+  content: "╝";
+  color: #369; 
+}
+p::after{
+  content: "Внимание!";
+  color: #f00; 
+}
+@media print{
+  a[href]::after{
+   content: "("attr(href)")";
+} 
+}
+
+</style>
+</head>
+<body>
+	<p>Первый параграф в body</p>
+	<p>Второй параграф в body</p>
+	<div>
+		<p>Первый параграф в div</p>
+		<p>Второй параграф в div</p>
+	</div>
+	<p>Текст и <a href="#">ссылка</a> в параграфе</p>
+	<input type="text">
+</body>
+</html>

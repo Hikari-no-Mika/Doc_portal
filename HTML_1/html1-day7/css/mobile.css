@@ -1,0 +1,50 @@
+* {
+    border: 0 !important;
+    /* border: 1px solid #000; */
+}
+html, body{
+    width: 90%;
+}
+.container{
+    width: 80%;
+}
+header a img{
+    width: 80%;    
+}
+header{
+    text-align: center;
+}
+header nav ul,
+header nav ul a ,
+header nav ul li,
+footer nav ul,
+footer nav ul a ,
+footer nav ul li
+{
+    display: block;    
+}
+.columns{
+    display: block;
+}
+.col{
+    width: 100%;
+}
+
+.left, .right{
+    margin: 0;
+    width: 80%;
+}
+
+a[href^=tel]{
+    display: inline-block;
+    background: #13ba35;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-shadow: 1px 1px 3px #444;  
+   
+}
+a[href^=tel]:focus, a[href^=tel]:hover{
+    box-shadow: 0 0 0 4px rgba(74, 201, 74, 0.478);  
+}

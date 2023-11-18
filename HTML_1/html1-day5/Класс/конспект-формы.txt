@@ -1,0 +1,39 @@
+form
+ action - КУДА отправятся данные формы
+ method - КАКИМ МЕТОДОМ отправятся (GET или POST)
+ enctype 
+
+Наш HTML:
+<form action="http://site.ru/order">
+
+</form>
+
+Сайт:
+http://site.ru/order
+
+
+Наш HTML:
+<form action="https://google.com/search">
+ <input name='q' value='Курсы Специалист'>
+</form>
+
+Сайт:
+https://yandex.ru/search?text=Курсы Специалист
+https://google.com/search?q=Курсы Специалист
+
+select/option - выпадающий список
+textarea - многострочное текстовое поле
+fieldset/legend - группировка полей
+доп.атрибуты:
+- requied - обязательное заполнение
+- autofocus - автоматическая фокусировка
+- autocomplete - автодополнение
+- disabled - блокировка работы элемента
+- pattern - маска ввода с регулярным выражением
+
+
+
+практика
+
+
+

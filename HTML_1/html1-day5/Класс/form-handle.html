@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .row {
+        margin: 4px;
+      }
+      .example {
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Обработка форм</h1>
+    <p><b>Обработка форм</b> - обработка данных на ЯП</p>
+    <code>E = mc<sup>2</sup></code>
+
+    <form action="">
+      <div class="row">
+        Имя:
+        <input
+          type="text"
+          name="firstname"
+          value="John"
+          placeholder="Введите ваше имя"
+          required
+          autofocus
+          autocomplete="off"
+          
+        />
+      </div>
+
+      <input type="hidden" name="state" value="kf">
+
+      <div class="row">
+        <select name="fruits" disabled>
+          <option value="1">Яблоки</option>
+          <option value="2" selected>Груши</option>
+          <option value="3">Персики</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <select name="category">
+          <optgroup label="Фрукты">
+            <option value="1">Яблоки</option>
+            <option value="2" selected>Груши</option>
+            <option value="3">Персики</option>
+          </optgroup>
+          <optgroup label="Овощи">
+            <option value="1">Картофель</option>
+            <option value="2" selected>Перец</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="row">
+        <textarea name="msg" id="" cols="40" rows="5"></textarea>
+      </div>
+
+      <fieldset>
+        <legend>Укажите</legend>
+        <div class="row">Время доставки:</div>
+        <div class="row">
+          <input type="radio" name="time" id="time1" />
+          <label for="time1">10:00-13:00</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="time" id="time2" />
+          <label for="time2">13:00-17:00</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="time" id="time3" checked />
+          <label for="time3">17:00-20:00</label>
+        </div>
+      </fieldset>
+
+      <div class="row">Дополнительно:</div>
+      <div class="row">
+        <input type="checkbox" name="time" id="time" checked />
+        Предмет1
+      </div>
+      <div class="row">
+        <input type="checkbox" name="time" id="time" />
+        Предмет2
+      </div>
+      <div class="row">
+        <input type="checkbox" name="time" id="time" />
+        Предмет3
+      </div>
+
+      <div class="row">
+        Цвет:
+        <input type="color" name="color" />
+      </div>
+
+      <div class="row">
+        Зарплата:
+        <input type="number" name="color" />
+      </div>
+
+      <div class="row">
+        День рождения:
+        <input type="date" name="color" />
+      </div>
+
+      <div class="row">
+        <input type="text" name="a" class="example" />+
+        <input type="text" name="b" class="example" />=
+        <input type="text" name="c" class="example" />
+      </div>
+
+      <div class="row">
+        <!-- <input type="image" src="./button.png"> -->
+        <input type="submit" value="Поехали " />
+        <input type="reset" />
+        <input
+          type="button"
+          value="Кнопка"
+          onclick="c.value=+a.value+(+b.value)"
+        />
+        <button>Отправить <b>данные</b></button>
+      </div>
+    </form>
+  </body>
+</html>
