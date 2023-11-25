@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        min-height: 600px;
+        width: 80%;
+        margin: auto;
+        border: 1px solid;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+          "header  header  header"
+          "left    center  right"
+          "footer  footer  footer";
+      }
+      .header {
+        grid-area: header;
+        background: #ccc;
+      }
+      .left {
+        grid-area: left;
+        background: #ddd;
+      }
+      .center {
+        grid-area: center;
+        background: #eee;
+      }
+      .right {
+        grid-area: right;
+        background: #aaa;
+      }
+      .footer {
+        grid-area: footer;
+        background: #bbb;
+      }
+      .cards {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+         grid-gap: 20px;
+      }
+      .card {
+         min-width: 200px;
+         min-height: 200px;
+         border: 1px solid green;
+         display: grid;
+         grid-template-rows: 50px 1fr min-content;
+      }
+      .top {
+         background: #ffc;
+      }
+      .middle {
+         background: #cff;
+      }
+      .bottom {
+         background: rgba(7, 245, 114, 0.63);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">HEADER</div>
+      <div class="left">LEFT</div>
+      <div class="center">
+        <center><h1>Товары</h1></center>
+        <div class="cards">
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, quis sed? Exercitationem aspernatur accusamus hic consectetur aliquam excepturi earum dolorem neque porro, maxime, possimus, impedit eius modi error sint asperiores!</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vero atque ratione esse rerum temporibus explicabo dignissimos, sunt sint molestias velit placeat modi odio consequuntur natus alias repellat ipsa adipisci. Est quam maiores quisquam distinctio velit repudiandae reprehenderit. Porro quibusdam nemo excepturi beatae consequuntur non quidem neque, veritatis commodi ad.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, obcaecati!</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem, ipsum.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem, ipsum dolor.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, amet voluptate accusantium alias provident ab ipsum nulla repellendus. Consequatur perspiciatis ut soluta esse quae praesentium est, dignissimos fuga reiciendis natus.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem ipsum dolor sit amet.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit unde maiores vel in nihil minima sed, id itaque mollitia inventore consequatur veritatis quod quaerat. Possimus quod ad qui voluptatibus earum quae? Ex voluptas alias at debitis quam doloribus dolore adipisci deleniti fugit et dolorem molestiae consequuntur incidunt dolor, eos officia expedita accusantium. Eos soluta perferendis enim minima, fugit illo neque!</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem, ipsum dolor.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+          <div class="card">
+            <div class="top">Название товара</div>
+            <div class="middle">Описание товара Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="bottom">Цена товара</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">RIGHT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
+</html>

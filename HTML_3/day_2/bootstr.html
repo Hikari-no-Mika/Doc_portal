@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap</title>
+    <style>
+       .r1 {background: #ccc;}
+       .r2 {background: var(--bs-gray-400);}
+   </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <h1>Привет, Таблички!</h1>
+    <div class="container-fluid">
+      <div class="row r1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea ad,
+      quisquam nulla aspernatur rem reiciendis molestiae quas optio placeat,
+      voluptas quo reprehenderit quia autem cumque necessitatibus accusantium
+      harum debitis cum. Eius, dolorum eum, ipsum tenetur aut dolor corrupti
+      laborum, dignissimos ut error voluptas alias dicta obcaecati molestias
+      quos nisi.
+    </div>
+    <div class="row r2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea ad,
+      quisquam nulla aspernatur rem reiciendis molestiae quas optio placeat,
+      voluptas quo reprehenderit quia autem cumque necessitatibus accusantium
+      harum debitis cum. Eius, dolorum eum, ipsum tenetur aut dolor corrupti
+      laborum, dignissimos ut error voluptas alias dicta obcaecati molestias
+      quos nisi.
+
+      <div class="col-md-4 col-12 r2">Левая</div>
+      <div class="col-md-8 col-12 r1">Правая</div>
+   </div>
+      <div class="row">
+         <div class="col bg-warning">Левая</div>
+
+         <div class="col bg-danger">
+            <div class="row">
+               <div class="col-xs-12 col-md-6 bg-info border">Левый верх</div>
+               <div class="col-xs-12 col-md-6 bg-success border">Правый верх</div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-6 bg-transparent border">Левый низ</div>
+               <div class="col-xs-12 col-md-6 bg-light border">Правый низ</div>
+            </div>
+         </div> 
+      </div>
+    </div>
+  </body>
+</html>

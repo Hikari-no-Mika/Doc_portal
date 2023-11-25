@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        min-height: 200px;
+        min-width: 200px;
+        border: 1px solid;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 30% 1fr 30%;
+        grid-gap: 10px;
+      }
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 1 / 2;
+        background: rebeccapurple;
+      }
+      .footer {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        background: silver;
+        display: grid;
+        justify-content: center;
+      }
+      .left {
+        grid-column: 1 / 2;
+        background: red;
+      }
+      .main {
+        grid-column: 2 / 3;
+        background: red;
+      }
+      .right {
+        grid-column: 3 / 4;
+        background: red;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 1px solid;
+        grid-gap: 5px;        
+      }
+      .cards__card {
+      background-color: rgb(75, 75, 233);   
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header"></div>
+      <div class="left"></div>
+      <div class="main"></div>
+      <div class="right"></div>
+      <div class="footer">
+        <div class="cards">
+          <div class="cards__card">card_1</div>
+          <div class="cards__card">card_2</div>
+          <div class="cards__card">card_3</div>
+          <div class="cards__card">card_4</div>
+          <div class="cards__card">card_5</div>
+          <div class="cards__card">card_6</div>
+          <div class="cards__card">card_7</div>
+          <div class="cards__card">card_8</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
